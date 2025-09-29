@@ -1,0 +1,61 @@
+        
+Jogo do Trem
+
+        
+Toque na tela ou pressione as setas para alternar trilhos, recolha passageiros e evite obstáculo    
+
+<section class="game-wrap">
+  <div>
+    <canvas id="game" width="800" height="520" tabindex="0" aria-label="Área de jogo"></canvas>
+    <div style="display:flex;gap:8px;margin-top:6px;align-items:center;justify-content:space-between">
+      <div class="hint">Toque para trocar de trilho • Foco: pressione Enter para pausar</div>
+      <div class="stat">Melhor: <span id="best">0</span></div>
+    </div>
+  </div>
+
+  <aside class="controls" aria-label="Controles do jogo">
+    <div class="row"><div style="flex:1"><div class="stat">Pontuação: <span id="score">0</span></div><div class="hint">Passageiros: <span id="collected">0</span></div></div></div>
+
+    <div class="row"><button id="startBtn" class="big-btn" aria-pressed="false">Iniciar / Reiniciar</button></div>
+
+    <div>
+      <label for="difficulty">Dificuldade (velocidade)</label>
+      <input id="difficulty" type="range" min="1" max="5" value="2" aria-valuemin="1" aria-valuemax="5">
+    </div>
+
+    <div>
+      <label for="contrast">Modo de alto contraste</label>
+      <button id="contrast" style="width:100%">Ativar</button>
+    </div>
+
+    <div>
+      <label for="motion">Reduzir movimentos</label>
+      <button id="motion" style="width:100%">Desativado</button>
+    </div>
+
+    <div>
+      <label for="sound">Som</label>
+      <button id="soundToggle" style="width:100%">Ativar som</button>
+    </div>
+
+    <div style="margin-top:auto">
+      <div class="hint">Controles:</div>
+      <ul style="margin:6px 0 0 18px;color:rgba(230,238,248,0.8)">
+        <li>Toque/click — Alterna trilho</li>
+        <li>Swipe para cima/baixo — Mudar trilho</li>
+        <li>Teclado: ← ou → alterna, Enter pausa</li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+<footer>
+  <div>Feito para aprendizado. Acessibilidade: foco, alto contraste, controles por teclado e toques. <span aria-hidden="true">🚆</span></div>
+</footer>
+
+
+  
+
+
+
+
